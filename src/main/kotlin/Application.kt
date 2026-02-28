@@ -14,7 +14,7 @@ import org.koin.ktor.plugin.Koin
 fun main(args: Array<String>) {
     val dotenv = dotenv {
         directory = "."
-        ignoreIfMissing = false
+        ignoreIfMissing = true
     }
 
     dotenv.entries().forEach {
